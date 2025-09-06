@@ -1,0 +1,19 @@
+name: ci
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Backend
+        run: |
+          cd backend
+          npm ci
+
+      - name: Frontend
+        run: |
+          cd frontend
+          npm ci

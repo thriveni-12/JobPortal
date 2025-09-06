@@ -1,0 +1,10 @@
+{
+  "name": "job-portal-e2e",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2"
+  },
+  "scripts": {
+    "test": "playwright test"
+  }
+}
